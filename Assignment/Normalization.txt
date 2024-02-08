@@ -1,0 +1,7 @@
+What is Normalization
+
+Floating point numbers are usually normalized
+Exponent is adjusted so that leading bit (MSB) of mantissa is 1
+Since it is always 1 there is no need to store it
+Scientific notation where numbers are normalized to give a single digit before the decimal point like in.
+For example, we represent 3.625 in 32 bit format.

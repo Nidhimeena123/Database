@@ -1,0 +1,18 @@
+Difference between DBMS and RDBMS
+
+DBMS (Database Management System) and RDBMS (Relational Database Management System)
+
+Definition:
+
+1.DBMS:It provides an interface for defining, creating, querying, updating, and managing databases.
+RDBMS:It organizes data into tables with rows and columns, and it enforces the principles of relational integrity.
+
+2.Language Support:
+
+DBMS: May use SQL-like languages.
+RDBMS: Typically uses SQL 
+
+3.Examples:
+
+DBMS: File systems, hierarchical databases, and network databases.
+RDBMS: Examples include MySQL, PostgreSQL, Oracle, Microsoft SQL Server

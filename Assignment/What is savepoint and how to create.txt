@@ -1,0 +1,21 @@
+What is savepoint and how to create a save point
+
+In SQL, a savepoint is a point within a transaction to which you can roll back if needed. 
+Here's a simple example:
+
+START TRANSACTION; -- Begin the transaction
+
+-- SQL statements
+insert into employees (employee_id, employee_name) values (1, 'John');
+SAVEPOINT before_update;
+
+update employees SET employee_name = 'Jane' where employee_id = 1;
+
+-- If something goes wrong, you can roll back to the savepoint
+ROLLBACK TO before_update;
+
+-- Additional SQL statements within the transaction
+insert into departments (department_id, department_name) values (101, 'IT');
+
+-- If everything is okay, commit the transaction
+COMMIT;

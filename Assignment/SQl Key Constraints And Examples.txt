@@ -1,0 +1,37 @@
+SQl Key Constraints And Examples
+
+SQL key constraints are rules or conditions applied to columns.
+1.Primary Key Constraint:
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50)
+);
+
+2.Unique Constraint:
+CREATE TABLE employees (
+    employee_id INT UNIQUE,
+    employee_email VARCHAR(50) UNIQUE
+);
+
+3.Foreign Key Constraint:
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    product_id INT,
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
+);
+
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(50)
+);
+
+4.Check Constraint:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_age INT,
+    CONSTRAINT check_age CHECK (employee_age >= 18)
+);
+
+
+
+

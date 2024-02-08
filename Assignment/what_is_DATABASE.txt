@@ -1,0 +1,4 @@
+What do you mean by database
+
+A database is a structured collection of data that is organized in a way to easily store, manage, and retrieve information.
+In a database, data is typically organized into tables, where each table contains rows and columns. Each row represents a record, and each column represents a field or attribute of that record.

@@ -70,11 +70,29 @@ order by salary desc;
 select * from Employee1
 order by salary asc;
 
--- 
+-- select first_name, incentive amount from employee and incentive table who have incentive more than 3000
 select First_name,Incentive_amount from Employee1,Incentive
 where Incentive_amount>3000;
  
- 
+ -- ----Create after trigger on Employee table which insert records in viewtable
+ -- Assuming viewtable exists, if not, create it
+CREATE TABLE IF NOT EXISTS viewtable (
+    id INT PRIMARY KEY,
+    employee_name VARCHAR(255),
+    salary DECIMAL(10, 2)
+    -- Add other columns as needed
+);
+
+-- Create the trigger
+CREATE TRIGGER after_employee_insert
+AFTER INSERT
+ON Employee1
+FOR EACH ROW
+    -- Insert the new record into the viewtable
+    INSERT INTO viewtable (id, employee_name, salary)
+    VALUES (NEW.employee_id, NEW.employee_name, NEW.salary);
+    -- Add other columns as needed
+
 
 
 

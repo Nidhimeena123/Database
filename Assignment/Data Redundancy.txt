@@ -1,0 +1,6 @@
+Data Redundancy
+
+
+Data redundancy occurs when the same piece of data is stored in multiple places within a database. In simpler terms, it's like having duplicate information unnecessarily repeated in different parts of your records.
+
+Imagine you have a list of employees in a company, and each employee's department is listed both in the employee details and in a separate department table. If the department name is repeated for every employee in their individual records and also stored in a separate department table, that's an example of data redundancy. 

@@ -1,0 +1,11 @@
+DDL Interpreter
+
+A DDL (Data Definition Language) interpreter is a module in a database management system (DBMS) that processes and executes Data Definition Language statements.
+
+DDL statements are responsible for creating, altering, and deleting database objects such as tables, indexes, and views.
+
+The DDL interpreter in a DBMS performs the following key functions:
+1.Parsing
+2.Validation
+3.Execution
+4.Metadata Management

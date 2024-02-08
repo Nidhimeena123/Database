@@ -1,0 +1,4 @@
+What is the MF Cod Rule of the RDBMS System
+
+RDBMS systems are typically governed by principles related to normalization, data integrity, and the relational model
+Common rules include normalization rules (e.g., First Normal Form, Second Normal Form, Third Normal Form) 
